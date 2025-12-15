@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "esther-spark-streaming"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.uv]
+dev-dependencies = [
+    "python-semantic-release>=9.8.0,<10",
+]
+
+[tool.semantic_release]
+# Récupère la version depuis le dernier tag et met à jour project.version
+version_toml = ["pyproject.toml:project.version"]
+# Branche de release (ajuste si nécessaire)
+branch = "main"
+# Formats de tags/commits générés par semantic-release
+tag_format = "v{version}"
+commit_message = "chore(release): {version}"
+commit_parser = "angular"
+changelog_file = "CHANGELOG.md"
+# Pas de publication d'artefacts tant qu'on ne le souhaite pas
+upload_to_pypi = false
+upload_to_release = false
