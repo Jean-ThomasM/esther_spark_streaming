@@ -91,6 +91,7 @@ uv run scripts/kafka_bronze_to_silver.py
 - lancer les cellules de la partie "Exploration Table Delta Pipeline avec Kafka"
 - données affichées : aperçu des 20 premières lignes, aperçu avec Pandas, requêtes possibles avec SQL
 - la dernière cellule permets de modifier une requête SQL simplement
+- les tables bronze et silver doivent contenir 500 lignes
 
 # Erreurs possibles :
 - l'ordre d'exécution des scripts (json_to_kafka // kafka_to_delta // kafka_bronze_to_silver) doit être respecté, sinon erreur
