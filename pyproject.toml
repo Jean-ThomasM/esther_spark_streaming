@@ -8,8 +8,18 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
-
+dependencies = [
+    "delta-spark>=4.0.0",
+    "ipython>=9.7.0",
+    "ju>=0.1.31",
+    "jupyter>=1.1.1",
+    "kafka-python>=2.3.0",
+    "pandas>=2.3.3",
+    "path>=17.1.1",
+    "pre-commit>=4.4.0",
+    "pyspark>=4.0.1",
+    "pytest>=9.0.1",
+]
 [tool.uv]
 dev-dependencies = [
     "python-semantic-release>=9.8.0,<10",

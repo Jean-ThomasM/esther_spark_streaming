@@ -10,5 +10,6 @@ wheels/
 .venv
 
 .git
-data/*
+data/out/*
 
+t s
